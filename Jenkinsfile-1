@@ -1,10 +1,10 @@
 pipeline {
-  agent any
-  stages {
-    stage('Test') {
-      steps {
-        sh 'liquibase --version'
-      }
+    agent any
+    stages {
+        stage('Saludo') {
+            steps {
+                bat 'echo Hola, soy un pipeline'
+            }
+        }
     }
-  }
 }
